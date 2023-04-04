@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign-up Form</title> 
+  <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Kalam&family=Rubik+Iso&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kalam&family=Rubik+Iso&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="main-container">
+    <div class="left-container">
+      <div class="logo-container">
+        <img src="plant.png" width="80px" height="80px" alt="logo">
+        <h1>GoGo Garden</h1>
+      </div>
+      <p class="credit">Photo by Roberto Nickson on Unsplash.</p>
+      
+    </div>
+    <div class="right-container">
+      <div>
+        <p>This is not a real online service! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id nibh et eros aliquam sodales ut tempor est.</p>
+        <p>Sign up <em>now</em> to get started.</p>
+        <p>You <em>know</em> you want to.</p>
+      </div>
+
+      <form action="#">
+        <p>Let's do this!</p>
+        <div class="row">
+          <div class="form-row">
+            <label for="first-name">FIRST NAME</label>
+            <input type="text" name="first-name" id="first-name" required>
+          </div>
+          <div class="form-row">
+            <label for="last-name">LAST NAME</label>
+            <input type="text" name="last-name" id="last-name" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-row">
+            <label for="email">EMAIL</label>
+            <input type="email" name="email" id="email" required></div>
+          <div class="form-row">
+            <label for="phone-number">PHONE NUMBER</label>
+            <input type="tel" name="phone-number" id="phone-number" title="Format: 123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-row">
+            <label for="password">PASSWORD</label>
+            <input type="password" name="password" id="password" minlength="5" required></div>
+          <div class="form-row">
+            <label for="confirm-password">CONFIRM PASSWORD</label>
+            <input type="password" name="confirm-password" id="confirm-password" minlength="5" required></div>
+        </div>
+
+        <button type="submit">Create Account</button>
+      </form>
+      
+      <div class="log-in">
+        <p class="account">Already have an account? <a href="#">Log in</a></p>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
+
+
